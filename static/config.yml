@@ -3,7 +3,10 @@ backend:
   repo: template01/nuxtentnetlifycms # Path to your Github repository
   branch: master # Branch to update (master by default)
 
-media_folder: "img/uploads" # Folder where user uploaded files should go
+#media_folder: "img/uploads" # Folder where user uploaded files should go
+media_folder: "static/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "uploads" # The src attribute for uploaded media will begin with /images/uploads
+
 
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
